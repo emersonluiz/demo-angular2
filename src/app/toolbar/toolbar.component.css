@@ -1,0 +1,49 @@
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.toolbar {
+    background: #2F5F8F; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#2F5F8F, #54AAFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2F5F8F, #54AAFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2F5F8F, #54AAFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#2F5F8F, #54AAFF); /* Standard syntax */
+    color: white;
+}
+
+.toolbar a, .toolbar ul li a {
+     color: white;
+}
+
+.toolbar ul li a:hover, .toolbar ul li a:focus {
+     color: #2F5F8F;
+     background: white;
+}
+
+.toolbar ul li ul {
+    border: none;
+}
+
+.toolbar ul li ul li a {
+    color: #1F1F1F;
+}
+
+.logo {
+    margin-right: 30px;
+}
+/*
+span, button {
+    color: white;
+}*/
+
+.menu {
+    background: white !important;
+}
+
+p  a {
+    padding-right: 15px;
+}
+
+.icon-bar{
+    background: white;
+}

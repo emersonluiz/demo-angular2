@@ -1,0 +1,36 @@
+<app-toolbar></app-toolbar>
+<app-breadcrumb [items]="items"></app-breadcrumb>
+
+<div class="container-fluid">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Home</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <canvas class="" baseChart
+                        [data]="pieChartData"
+                        [labels]="pieChartLabels"
+                        [chartType]="pieChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)">
+                    </canvas>
+
+                </div>
+                <div class="col-sm-6">
+
+                    <canvas baseChart
+                        [datasets]="barChartData"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)">
+                    </canvas>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<app-toolbar></app-toolbar>
+<app-breadcrumb [items]="items"></app-breadcrumb>
+
+<div class="container-fluid">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Categoria</div>
+        <div class="panel-body">
+
+            <nav class="navbar navbar-default">
+                <button type="button" class="btn btn-default btn-plus" (click)="onBack()">
+                    <span class="glyphicon glyphicon-arrow-left"></span>
+                </button>
+            </nav>
+
+            <div class="row">
+                <div class="form-group form-group-sm col-sm-12" >
+                    <label>Nome</label>
+                    <p>{{category.name}}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

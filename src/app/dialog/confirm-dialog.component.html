@@ -1,0 +1,25 @@
+<div class="modal fade" id="deleteBox" tabindex="-1" role="dialog" aria-labelledby="Delete" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content text-left">
+            <div class="modal-header modal-title">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="deleteLabel">{{title}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            {{message}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="yes()">Sim</button>
+            </div>
+        </div>
+    </div>
+</div>

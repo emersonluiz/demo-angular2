@@ -1,0 +1,27 @@
+<app-toolbar></app-toolbar>
+<app-breadcrumb [items]="items"></app-breadcrumb>
+
+<div class="container-fluid">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Categoria</div>
+        <div class="panel-body">
+
+            <nav class="navbar navbar-default">
+                <button type="button" class="btn btn-default btn-plus" (click)="onBack()">
+                    <span class="glyphicon glyphicon-arrow-left"></span>
+                </button>
+            </nav>
+
+            <div class="row">
+                <div class="form-group form-group-sm col-sm-12" >
+                    <label for="InputName">Nome *</label>
+                    <input type="text" class="form-control" id="InputName" name="InputName" placeholder="Nome" required>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary" (click)="save()">Salvar</button>
+        </div>
+    </div>
+</div>
+
+<simple-notifications [options]="options"></simple-notifications>

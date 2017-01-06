@@ -1,0 +1,6 @@
+<ol class="breadcrumb">
+  <li *ngFor="let item of items; let i = index">
+    <a *ngIf="(i + 1) != items.length && item.link != ''" routerLink="{{item.link}}">{{item.label}}</a>
+    <span *ngIf="(i + 1) == items.length || item.link == ''" class="active">{{item.label}}</span>
+  </li>
+</ol>
